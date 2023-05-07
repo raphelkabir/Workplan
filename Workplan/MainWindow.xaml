@@ -41,18 +41,14 @@
                     Margin="0,8,0,0">
             <RadioButton IsChecked="True"
                          GroupName="SideMenu"
-                         Checked="SideMenu_Checked"
                          Style="{ThemeResource HomeButton}"/>
             <RadioButton Content="Priority" 
                          Tag="&#xE734;" 
                          GroupName="SideMenu"
-                         Checked="SideMenu_Checked"
                          Style="{ThemeResource PriorityButton}"/>
             <RadioButton GroupName="SideMenu"
-                         Checked="SideMenu_Checked"
                          Style="{ThemeResource OverdueButton}"/>
             <RadioButton GroupName="SideMenu"
-                         Checked="SideMenu_Checked"
                          Style="{ThemeResource UnplannedButton}"/>
 
             <Rectangle Height="1"
@@ -60,13 +56,13 @@
                        Fill="DarkGray"
                        Opacity="0.4"
                        Margin="16,4,16,0"/>
-            <TextBlock Text="Projects"
+            <TextBlock Text="Workspaces"
                        Margin="16,8,0,0"
                        FontSize="16"
                        Style="{StaticResource Label}"/>
         </StackPanel>
 
-        <ListView x:Name="ProjectsView" 
+        <ListView x:Name="WorkspacesView" 
                   Grid.Row="1"
                   ItemsSource="{x:Bind ItemsSource}"
                   Margin="0,8,0,0"

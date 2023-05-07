@@ -12,7 +12,6 @@ namespace Workplan
     {
         private AppWindow m_AppWindow;
 
-        private RadioButton Selected;
         private List<string> ItemsSource { get; set; }
 
         public MainWindow()
@@ -32,20 +31,6 @@ namespace Workplan
             IntPtr hWnd = WindowNative.GetWindowHandle(this);
             WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
             return AppWindow.GetFromWindowId(wndId);
-        }
-
-        private void ProjectsView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (Selected != null) 
-                Selected.IsChecked = false;
-        }
-
-        private void SideMenu_Checked(object sender, RoutedEventArgs e)
-        {
-            Selected = sender as RadioButton;
-            if (ProjectsView != null) 
-                ProjectsView.SelectedIndex = -1;
-            Selected.IsChecked = true;
         }
     }
 }
