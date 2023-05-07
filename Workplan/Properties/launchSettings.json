@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Workplan (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Workplan (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
