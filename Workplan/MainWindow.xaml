@@ -56,10 +56,6 @@
                        Fill="DarkGray"
                        Opacity="0.4"
                        Margin="16,4,16,0"/>
-            <TextBlock Text="Workspaces"
-                       Margin="16,8,0,0"
-                       FontSize="16"
-                       Style="{StaticResource Label}"/>
         </StackPanel>
 
         <ListView x:Name="WorkspacesView" 
